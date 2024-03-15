@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Calculator | By Subh </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="phone-box">
+            <div class="banner">
+                <h1>expense Calculator</h1>
+            </div>
+
+            <form id="expenseForm">
+                <label for="monthlyExpense">Monthly expense (in rupees):</label>
+                <input type="number" id="monthlyExpense" required>
+                
+                <label for="inflationRate">Inflation Rate (in percentage):</label>
+                <input type="number" id="inflationRate" required>
+                
+                <label for="numYears">Number of Years:</label>
+                <input type="number" id="numYears" required>
+
+                <button type="button" onclick="calculateExpense()">Calculate</button>
+            </form>
+
+            <div id="result"></div>
+        </div>
+    </div>
+</body>
+</html>
